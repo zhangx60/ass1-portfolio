@@ -1,0 +1,304 @@
+/* =========================
+   BASIC PAGE STYLING
+   ========================= */
+
+body {
+  margin: 0;
+  color: black;
+  background-color: rgb(244, 228, 231);
+
+  font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Keeps the content centered and prevents it from becoming too wide */
+.page-width {
+  width: 86%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+/* =========================
+   LINKS
+   ========================= */
+
+a {
+  color: #24574b;
+}
+
+a:hover {
+  color: #a13343;
+}
+
+a:focus {
+  outline: 2px solid #a13343;
+  outline-offset: 4px;
+}
+
+
+/* =========================
+   ACCESSIBILITY: SKIP LINK
+   ========================= */
+
+.skip-link {
+  position: absolute;
+  left: 1em;
+  top: -5em;
+  padding: 0.5em;
+  background-color: #ffffff;
+}
+
+.skip-link:focus {
+  top: 0.5em;
+}
+
+
+/* =========================
+   HEADER / NAVIGATION
+   ========================= */
+
+.site-header {
+  border-bottom: 1px solid #dce2db;
+}
+
+nav {
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+}
+
+.site-name {
+  display: inline-block;
+  width: 59%;
+  font-weight: bold;
+  text-decoration: none;
+  color: #242c2b;
+}
+
+.monogram {
+  display: inline-block;
+  margin-right: 0.65em;
+  padding: 0.05em 0.3em;
+
+  color: #ffffff;
+  background-color: white;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35em;
+}
+
+nav ul {
+  display: inline-block;
+  width: 39%;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 1.5em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #242c2b;
+}
+
+
+/* =========================
+   TYPOGRAPHY
+   ========================= */
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 4.5em;
+  margin-bottom: 0.1em;
+}
+
+h2 {
+  font-size: 2.6em;
+  margin-bottom: 0.55em;
+}
+
+h3 {
+  font-size: 1.65em;
+  margin-bottom: 0.4em;
+}
+
+.name-dot {
+  color: #a13343;
+}
+
+.section-label {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8em;
+  color: #24574b;
+  margin-bottom: 1.4em;
+}
+
+.handwritten {
+  font-family: "Segoe Print", "Comic Sans MS", cursive;
+  font-size: 1.3em;
+  color: #a13343;
+  margin-bottom: 1em;
+}
+
+.small-note {
+  font-size: 1.1em;
+}
+
+.text-link {
+  font-weight: bold;
+}
+
+.text-link span {
+  margin-left: 0.35em;
+}
+
+.second-link {
+  display: inline-block;
+  margin-left: 1.5em;
+}
+/* =========================
+   INTRO / HERO SECTION
+   ========================= */
+
+.intro-band {
+  background-color: rgb(255, 247, 247);
+  border-bottom: 1px solid beige;
+}
+
+.intro {
+  padding-top: 2.7em;
+  padding-bottom: 3.2em;
+}
+
+.intro-text {
+  display: inline-block;
+  vertical-align: middle;
+
+  width: 53%;
+  margin-right: 7%;
+}
+
+.intro-copy {
+  max-width: 29em;
+  margin-bottom: 1.5em;
+}
+
+
+/* =========================
+   PERSONAL PHOTO
+   ========================= */
+
+.portrait-print {
+  display: inline-block;
+  vertical-align: middle;
+
+  position: relative;
+
+  width: 35%;
+  margin: 0;
+
+  padding: 12px;
+
+  border: 1px solid #b6c2b8;
+  border-bottom: 5px solid #b6c2b8;
+
+  background-color: #ffffff;
+}
+
+.portrait-print img {
+  display: block;
+
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  padding-top: 0.8em;
+
+  font-family: "Segoe Print", "Comic Sans MS", cursive;
+  font-size: 0.85em;
+
+  text-align: center;
+}
+
+.photo-tab {
+  position: absolute;
+
+  top: -14px;
+  right: 22px;
+
+  padding: 0.2em 0.7em;
+
+  background-color: #f0bfd0;
+  color: #61313f;
+
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8em;
+}
+
+/* =========================
+   ABOUT ME SECTION
+   ========================= */
+
+.about-band {
+  border-bottom: 1px solid #ddd5cc;
+}
+
+.about-content {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.about-content h2 {
+  margin-bottom: 0.35em;
+}
+
+.about-columns {
+  margin-top: 2.2em;
+}
+
+.about-column {
+  display: inline-block;
+  vertical-align: top;
+
+  width: 44%;
+}
+
+.about-column:first-child {
+  margin-right: 8%;
+}
+
+.about-column p {
+  margin-bottom: 1.5em;
+
+  font-size: 1.05em;
+  line-height: 1.8;
+}
+
+.about-column a {
+  color: lightskyblue;
+  font-weight: bold;
+}
+
+.about-column a:hover {
+  color: #a13343;
+}

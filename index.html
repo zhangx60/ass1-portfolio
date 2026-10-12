@@ -2,23 +2,425 @@
 <html lang="en">
 
 <!--
-WRITTEN BY: Your name here
-EMAIL: Your email here
+WRITTEN BY: Xinyu Zhang
+EMAIL: zhangx60
 -->
 
 <head>
   <meta charset="utf-8">
-  <meta name="author" content="Your name here">
-  <meta name="description" content="description of your page">
-   <!-- you would link to an external stylesheet here! -->
-   <!-- you would also link to Bootstrap here! -->
-  <title>title here</title>
+
+  <meta name="author" content="Xinyu (Isabel) Zhang">
+
+  <meta
+    name="description"
+    content="Personal website of Xinyu (Isabel) Zhang and her pets">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Xinyu (Isabel) Zhang | About Me</title>
 </head>
+
+
 <body>
-  <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-       W3C validator
+
+  <!-- Accessibility: lets keyboard users skip directly to the main content -->
+  <a class="skip-link" href="#main">
+    Skip to content
+  </a>
+
+
+  <!-- =========================
+       HEADER / NAVIGATION
+       ========================= -->
+  <header id="top" class="site-header">
+
+    <nav class="page-width" aria-label="Main navigation">
+
+    <a class="site-name" href="index.html">
+      <span class="monogram" aria-hidden="true">🐾</span>
+      Isabel Zhang
     </a>
-  </p>
+
+      <ul>
+        <li>
+          <a href="#about">About me</a>
+        </li>
+
+        <li>
+          <a href="#family">My pets</a>
+        </li>
+      </ul>
+
+    </nav>
+
+  </header>
+
+
+  <!-- =========================
+       MAIN CONTENT
+       ========================= -->
+  <main id="main">
+
+
+    <!-- =========================
+         INTRO / HERO SECTION
+         ========================= -->
+    <section class="intro-band">
+
+      <div class="page-width intro">
+
+
+        <!-- Left side: introduction -->
+        <div class="intro-text">
+
+          <h1>
+            Xinyu<br>
+            Zhang</span>
+          </h1>
+
+          <p class="handwritten">
+            You can call me Isabel.
+          </p>
+
+          <p class="intro-copy">
+            Hi! I'm a fourth-year Data Science student at UC Irvine
+            with a research interest in infectious diseases.
+            Welcome to my little corner of the web.
+          </p>
+
+          <a class="text-link" href="#about">
+            A little about me
+            <span aria-hidden="true">&darr;</span>
+          </a>
+
+          <a class="text-link second-link" href="#family">
+            Meet my pets
+            <span aria-hidden="true">&darr;</span>
+          </a>
+
+        </div>
+
+
+        <!-- Right side: personal photo -->
+        <figure class="portrait-print">
+
+          <img
+            src="images/Profile.jpg"
+            alt="Portrait of Xinyu Zhang">
+
+          <span class="photo-tab" aria-hidden="true">
+            HELLO!
+          </span>
+
+          <figcaption>
+            A picture of Isabel
+          </figcaption>
+
+        </figure>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="about-band">
+
+  <div class="page-width about-content">
+
+    <p class="section-label">
+      01 / ABOUT ME
+    </p>
+
+    <h2>
+      About me<span class="name-dot">.</span>
+    </h2>
+
+    <p class="handwritten small-note">
+      A few things about me.
+    </p>
+
+
+    <div class="about-columns">
+
+      <!-- Left column -->
+      <div class="about-column">
+
+        <p>
+          My name is Xinyu (Isabel) Zhang.
+          I'm a fourth-year Data Science major at
+          <a href="https://uci.edu/">
+            University of California, Irvine
+          </a>.
+        </p>
+
+        <p>
+          My interests are pretty varied, I especially enjoy
+          traveling, trying new food, and, surprisingly, studying!
+        </p>
+
+        <p>
+          When I'm not studying or doing research,
+          I'm usually playing games or "supervising" my pets.
+        </p>
+
+      </div>
+
+
+      <!-- Right column -->
+      <div class="about-column">
+
+        <p>
+          My current research interest is
+          <a href="https://www.scripps.edu/diseases-medicines/infectious-diseases/">
+            infectious diseases
+          </a>.
+          If you're interested in similar topics, feel free to reach out.
+          I'd always be happy to chat, exchange ideas, or maybe even collaborate!
+        </p>
+
+        <p>
+          You can reach me at
+          <a href="mailto:zhangx60@uci.edu">
+            zhangx60@uci.edu
+          </a>.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+    <!-- MY PETS SECTION -->
+    <section id="family" class="pet-band">
+
+      <div class="page-width section-inner">
+
+        <p class="section-label">
+          02 / MY LITTLE FAMILY
+        </p>
+
+        <h2>
+          Three cats. Two dogs.<br>
+          Five introductions<span class="name-dot">.</span>
+        </h2>
+
+        <p class="family-caption">
+          A small roll call of the pets in my life.
+        </p>
+
+        <!-- Pet cards -->
+        <div class="family-gallery">
+
+          <!-- Cookie -->
+          <a
+            class="family-card cat-card"
+            href="pets.html#cookie">
+
+            <div class="mini-portrait">
+
+              <span
+                class="portrait-letter"
+                aria-hidden="true">
+                C
+              </span>
+
+              <span class="pet-number">
+                01 / CAT
+              </span>
+
+            </div>
+
+            <h3>
+              Cookie
+              <span aria-hidden="true">
+                &nearr;
+              </span>
+            </h3>
+
+            <p>
+              American Shorthair
+            </p>
+
+          </a>
+          <!-- Nino -->
+          <a
+            class="family-card nino-card"
+            href="pets.html#nino">
+
+            <div class="mini-portrait">
+
+              <span
+                class="portrait-letter"
+                aria-hidden="true">
+                N
+              </span>
+
+              <span class="pet-number">
+                02 / CAT
+              </span>
+
+            </div>
+
+            <h3>
+              Nino
+              <span aria-hidden="true">
+                &nearr;
+              </span>
+            </h3>
+
+            <p>
+              Black-and-white cat
+            </p>
+
+          </a>
+          <!-- Bruno -->
+          <a
+            class="family-card bruno-card"
+            href="pets.html#bruno">
+
+            <div class="mini-portrait">
+
+              <span
+                class="portrait-letter"
+                aria-hidden="true">
+                B
+              </span>
+
+              <span class="pet-number">
+                03 / CAT
+              </span>
+
+            </div>
+
+            <h3>
+              Bruno
+              <span aria-hidden="true">
+                &nearr;
+              </span>
+            </h3>
+
+            <p>
+              Chinese tabby cat
+            </p>
+
+          </a>
+          <!-- Biscuit -->
+          <a
+            class="family-card biscuit-card"
+            href="pets.html#biscuit">
+
+            <div class="mini-portrait">
+
+              <span
+                class="portrait-letter"
+                aria-hidden="true">
+                B
+              </span>
+
+              <span class="pet-number">
+                04 / DOG
+              </span>
+
+            </div>
+
+            <h3>
+              Biscuit
+              <span aria-hidden="true">
+                &nearr;
+              </span>
+            </h3>
+
+            <p>
+              Border Collie mix
+            </p>
+
+          </a>
+          <!-- Teddy -->
+          <a
+            class="family-card teddy-card"
+            href="pets.html#teddy">
+
+            <div class="mini-portrait">
+
+              <span
+                class="portrait-letter"
+                aria-hidden="true">
+                T
+              </span>
+
+              <span class="pet-number">
+                05 / DOG
+              </span>
+
+            </div>
+
+            <h3>
+              Teddy
+              <span aria-hidden="true">
+                &nearr;
+              </span>
+            </h3>
+
+            <p>
+              Poodle mix
+            </p>
+
+          </a>
+
+        </div>
+
+        <!-- Link to second page -->
+        <a class="text-link" href="pets.html">
+
+          Visit the whole family
+
+          <span aria-hidden="true">
+            &rarr;
+          </span>
+
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-width">
+
+    <p>
+
+      Xinyu (Isabel) Zhang
+
+      <span class="footer-note">
+        / A personal corner of the web
+      </span>
+
+    </p>
+
+    <a href="http://validator.w3.org/check?uri=referer">
+      W3C validator
+    </a>
+
+
+    <a href="#top">
+
+      Back to top
+
+      <span aria-hidden="true">
+        &uarr;
+      </span>
+
+    </a>
+
+  </footer>
+
+
 </body>
+
 </html>
