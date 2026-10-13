@@ -11,7 +11,7 @@ body {
 }
 
 
-/* Keeps the content centered and prevents it from becoming too wide */
+/* Keeps the content centered and prevents too wide */
 
 .page-width {
   width: 86%;
@@ -55,8 +55,7 @@ a:focus {
 }
 
 
-/* 
-HEADER / NAVIGATION*/
+/* HEADER*/
 
 .site-header {
   border-bottom: 1px solid gainsboro;
@@ -102,7 +101,7 @@ nav a {
 }
 
 
-/* TYPOGRAPHY */
+/*typography */
 
 h1,
 h2,
@@ -179,7 +178,7 @@ h3 {
 }
 
 
-/* INTRO  */
+/* Intro*/
 
 .intro-band {
   background-color: snow;
@@ -207,34 +206,26 @@ h3 {
 
   margin-bottom: 1.5em;
 }
+/**/
 
-
-/* PERSONAL PHOTO */
+/*photo */
 
 .portrait-print {
   display: inline-block;
-
   vertical-align: middle;
-
   position: relative;
-
   width: 35%;
-
   margin: 0;
   padding: 12px;
-
   background-color: white;
-
   border: 1px solid silver;
   border-bottom: 5px solid silver;
 }
 
 .portrait-print img {
   display: block;
-
   width: 100%;
   max-width: 100%;
-
   height: auto;
 }
 
@@ -243,18 +234,14 @@ figcaption {
 
   font-family: "Segoe Print", "Comic Sans MS", cursive;
   font-size: 0.85em;
-
   text-align: center;
 }
 
 .photo-tab {
   position: absolute;
-
   top: -14px;
   right: 22px;
-
   padding: 0.2em 0.7em;
-
   background-color: lightpink;
   color: maroon;
 
@@ -263,9 +250,7 @@ figcaption {
 }
 
 
-/* =========================
-   ABOUT ME SECTION
-   ========================= */
+/* ABOUTME */
 
 .about-band {
   border-bottom: 1px solid lightgray;
@@ -298,16 +283,13 @@ figcaption {
 
 .about-column p {
   margin-bottom: 1.5em;
-
   font-size: 1.05em;
   line-height: 1.8;
-
   letter-spacing: 0.01em;
 }
 
 .about-column a {
   color: darkslategray;
-
   font-weight: bold;
 }
 
@@ -316,7 +298,12 @@ figcaption {
 }
 
 
-/* MY PETS SECTION*/
+/* MY PETS sec*/
+
+.section-inner {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
 
 .pet-band {
   background-color: lightpink;
@@ -335,30 +322,22 @@ figcaption {
 
 .family-card {
   display: inline-block;
-
   vertical-align: top;
-
   width: 46%;
-
   margin-right: 3%;
   margin-bottom: 2em;
-
   color: black;
   background-color: snow;
-
   border: 1px solid silver;
   border-bottom: 4px solid silver;
-
   text-decoration: none;
 }
 
 .mini-portrait {
   position: relative;
-
   height: 400px;
 
   margin: 10px;
-
   overflow: hidden;
 }
 
@@ -408,7 +387,7 @@ figcaption {
 }
 
 
-/* PET CHAPTERS */
+/* PET */
 
 .pet-chapter {
   padding-top: 4em;
@@ -421,16 +400,20 @@ figcaption {
   margin-bottom: 0;
 }
 
+.chapter-inner h1 {
+  font-size: 2.6em;
+  margin-bottom: 0;
+}
 
-/* PET ALBUM HEADING */
+
+/* PET ALBUM Heading */
 .album-heading {
   padding-top: 2.5em;
   padding-bottom: 2.5em;
 }
 
 
-/* PET NOTEBOOK */
-
+/* NOTEBOOK */
 .pet-notebook {
   position: relative;
 
@@ -482,8 +465,37 @@ figcaption {
   color: black;
 }
 
+/* Hide the little note until the photo is hovered or focused. */
+.pet-reaction {
+  display: none;
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 55px;
+  padding: 0.65em;
+  border: 1px solid lightpink;
+  background-color: snow;
+  color: brown;
+  font-family: "Segoe Print", "Comic Sans MS", cursive;
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: center;
+}
+.family-card:hover .pet-reaction,
+.family-card:focus .pet-reaction,
+.pet-photo:hover .pet-reaction,
+.pet-photo:focus .pet-reaction {
+  display: block;
+}
+.pet-photo .pet-reaction {
+  bottom: 90px;
+}
+.pet-photo:focus {
+  outline: 2px solid brown;
+  outline-offset: 4px;
+}
 
-/* HANDWRITTEN NOTES */
+/* notes */
 
 .pet-note {
   position: absolute;
@@ -589,9 +601,7 @@ figcaption {
 }
 
 
-/* =========================
-   PET INTRODUCTION
-   ========================= */
+/*PET INTRODUCTION*/
 
 .pet-intro {
   width: 76%;
@@ -619,7 +629,20 @@ figcaption {
 }
 
 
+footer {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-top: 1px solid lightgray;
+}
+
+footer a {
+  display: inline-block;
+  margin-right: 1.5em;
+}
+
+
 /* Smaller screens: stack columns and let images keep their natural proportions. */
+/*learn from: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Media_queries */
 @media screen and (max-width: 900px) {
   .site-name,
   nav ul {
@@ -643,6 +666,15 @@ figcaption {
 
   h2 {
     font-size: 2.2em;
+  }
+
+  .chapter-inner h1 {
+    font-size: 2.2em;
+  }
+
+  .section-inner {
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
 
   .intro-text,

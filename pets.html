@@ -1,534 +1,80 @@
 <!doctype html>
 <html lang="en">
-
 <!--
 WRITTEN BY: Xinyu Zhang
 EMAIL: zhangx60
 -->
-
 <head>
-
   <meta charset="utf-8">
-
   <meta name="author" content="Xinyu (Isabel) Zhang">
-
-  <meta
-    name="description"
-    content="A personal pet album featuring Cookie, Nino, Bruno, and Biscuit">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1">
-
+  <meta name="description" content="A personal pet album featuring Cookie, Nino, Bruno, and Biscuit">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
-
   <title>My Pets | Xinyu (Isabel) Zhang</title>
-
 </head>
-
 <body>
-
-  <!-- Skip link -->
-  <a class="skip-link" href="#main">
-    Skip to content
-  </a>
-
-
-  <!-- HEADER-->
-
+  <a class="skip-link" href="#main">Skip to content</a>
   <header id="top" class="site-header">
-
     <nav class="page-width" aria-label="Main navigation">
-      <a class="site-name" href="index.html">
-        Isabel Zhang
-      </a>
-
+      <a class="site-name" href="index.html">Isabel Zhang</a>
       <ul>
-
-        <li>
-          <a href="index.html#about">
-            About me
-          </a>
-        </li>
-
-        <li>
-          <a href="index.html#family">
-            My pets
-          </a>
-        </li>
-
+        <li><a href="index.html#about">About me</a></li>
+        <li><a href="pets.html" aria-current="page">My pets</a></li>
       </ul>
-
     </nav>
-
   </header>
 
-
-  <!-- MAIN -->
-
   <main id="main">
-
-    <!-- PET ALBUM INTRO -->
     <section class="album-heading page-width">
-
-      <p class="section-label">
-        ISABEL'S FAMILY ALBUM / FOUR LITTLE CHAPTERS
-      </p>
-      <h1>
-        The pet album<span class="name-dot">.</span>
-      </h1>
-
+      <p class="section-label">ISABEL'S FAMILY ALBUM / FOUR LITTLE CHAPTERS</p>
+      <h1>The pet album<span class="name-dot">.</span></h1>
     </section>
 
-    <!-- COOKIE -->
-
-    <section id="cookie" class="pet-chapter cat-card">
-
-      <div class="page-width chapter-inner">
-
-        <h2>
-          Cookie
-        </h2>
-
-        <div class="pet-notebook">
-          <!-- Top left note -->
-          <p class="pet-note note-top-left">
-
-            10 years old
-
-            <span
-              class="note-arrow"
-              aria-hidden="true">
-
-              ↘
-
-            </span>
-
-          </p>
-          <!-- Top right note -->
-
-          <p class="pet-note note-top-right">
-
-            piano music<br>
-            + corn lover
-
-            <span
-              class="note-arrow"
-              aria-hidden="true">
-
-              ↙
-
-            </span>
-
-          </p>
-
-          <!-- Cookie photo -->
-
-          <figure class="pet-photo">
-
-            <img
-              src="images/Cookie.jpg"
-              alt="Cookie, an American Shorthair cat">
-
-            <figcaption>
-              My 12th birthday present.
-            </figcaption>
-
-          </figure>
-
-          <!-- Bottom left note -->
-
-          <p class="pet-note note-bottom-left">
-            <span
-              class="note-arrow"
-              aria-hidden="true">
-              ↗
-            </span>
-
-            not exactly a fan<br>
-            of any other animals
-
-          </p>
-
-          <!-- Bottom right note -->
-          <p class="pet-note note-bottom-right">
-            <span
-              class="note-arrow"
-              aria-hidden="true">
-              ↖
-            </span>
-
-            the only one who<br>
-            shares my bed
-
-          </p>
+    <section class="pet-band">
+      <div class="page-width section-inner">
+        <h2>My Fur Babies.</h2>
+        <div class="family-gallery">
+          <a id="cookie" class="family-card cat-card" href="cookie.html">
+            <div class="mini-portrait">
+              <img src="images/Cookie.jpg" alt="Cookie, an American Shorthair cat">
+              <span class="pet-number">01 / CAT</span>
+            </div>
+            <h3>Cookie <span aria-hidden="true">&nearr;</span></h3>
+            <p>American Shorthair</p>
+          </a>
+          <a id="nino" class="family-card nino-card" href="nino.html">
+            <div class="mini-portrait">
+              <img src="images/Nino.jpg" alt="Nino, a black-and-white cat">
+              <span class="pet-number">02 / CAT</span>
+            </div>
+            <h3>Nino <span aria-hidden="true">&nearr;</span></h3>
+            <p>Tuxedo Cat</p>
+          </a>
+          <a id="bruno" class="family-card bruno-card" href="bruno.html">
+            <div class="mini-portrait">
+              <img src="images/Bruno.jpg" alt="Bruno, a tabby cat">
+              <span class="pet-number">03 / CAT</span>
+            </div>
+            <h3>Bruno <span aria-hidden="true">&nearr;</span></h3>
+            <p>Dragon Li cat</p>
+          </a>
+          <a id="biscuit" class="family-card biscuit-card" href="biscuit.html">
+            <div class="mini-portrait">
+              <img src="images/Biscuit.jpg" alt="Biscuit, a Border Collie mix">
+              <span class="pet-number">04 / DOG</span>
+            </div>
+            <h3>Biscuit <span aria-hidden="true">&nearr;</span></h3>
+            <p>Border Collie mix</p>
+          </a>
         </div>
-
-        <!-- Cookie introduction -->
-
-        <div class="pet-intro">
-
-          <p>
-            Cookie was my very first pet, and he's already 10 years old.
-            He loves listening to piano music and, 100% corn lover. 
-            He has never been a big fan of other animals and usually 
-            prefers having his own space. That might
-            also explain why he's still the only one who gets to share
-            my bed with me.
-          </p>
-
-        </div>
-        <a
-          class="text-link chapter-next"
-          href="#nino">
-
-          Next up: Nino
-
-          <span aria-hidden="true">
-            &rarr;
-          </span>
-
-        </a>
-
       </div>
-
     </section>
-
-    <!--
-      NINO 
-    -->
-
-    <section id="nino" class="pet-chapter nino-card">
-
-      <div class="page-width chapter-inner">
-
-        <h2>
-          Nino<span class="name-dot">.</span>
-        </h2>
-
-
-        <div class="pet-notebook">
-
-          <!-- Top left note -->
-          <p class="pet-note note-top-left">
-            1 year old
-
-            <span class="note-arrow" aria-hidden="true">
-              ↘
-            </span>
-          </p>
-
-
-          <!-- Top right note -->
-          <p class="pet-note note-top-right">
-            extremely<br>
-            picky eater
-
-            <span class="note-arrow" aria-hidden="true">
-              ↙
-            </span>
-          </p>
-
-
-          <!-- Nino photo -->
-          <figure class="pet-photo">
-
-            <img
-              src="images/Nino.jpg"
-              alt="Nino, a black-and-white cat">
-
-            <figcaption>
-              Found last year. Still judging every meal.
-            </figcaption>
-
-          </figure>
-
-
-          <!-- Bottom left note -->
-          <p class="pet-note note-bottom-left">
-
-            <span class="note-arrow" aria-hidden="true">
-              ↗
-            </span>
-
-            Vege Hater<br>
-
-          </p>
-
-
-          <!-- Bottom right note -->
-          <p class="pet-note note-bottom-right">
-
-            <span class="note-arrow" aria-hidden="true">
-              ↖
-            </span>
-
-            meat only,<br>
-            apparently :)
-
-          </p>
-
-        </div>
-
-
-        <!-- Nino introduction -->
-        <div class="pet-intro">
-
-          <p>
-            Nino is one year old, and we found him on the stree last year.
-            He is easily the pickiest eater in the house and always seems
-            to know exactly what he does and doesn't want. He's also the
-            only one who refuses to eat vegetables at all, so we usually
-            joke that he's on a strict meat-only diet.
-          </p>
-
-        </div>
-
-
-        <a class="text-link chapter-next" href="#bruno">
-          Next up: Bruno
-          <span aria-hidden="true">&rarr;</span>
-        </a>
-
-      </div>
-
-    </section>
-
-
-
-    <!--
-      BRUNO
-    -->
-
-    <section id="bruno" class="pet-chapter bruno-card">
-
-      <div class="page-width chapter-inner">
-
-
-        <h2>
-          Bruno<span class="name-dot">.</span>
-        </h2>
-
-
-        <div class="pet-notebook">
-
-          <!-- Top left note -->
-          <p class="pet-note note-top-left">
-            5 months old
-
-            <span class="note-arrow" aria-hidden="true">
-              ↘
-            </span>
-          </p>
-
-
-          <!-- Top right note -->
-          <p class="pet-note note-top-right">
-            Full Of<br>
-            Energy
-
-            <span class="note-arrow" aria-hidden="true">
-              ↙
-            </span>
-          </p>
-
-
-          <!-- Bruno photo -->
-          <figure class="pet-photo">
-
-            <img
-              src="images/Bruno.jpg"
-              alt="Bruno, a young tabby cat">
-
-            <figcaption>
-              Small cat, very big presence.
-            </figcaption>
-
-          </figure>
-
-
-          <!-- Bottom left note -->
-          <p class="pet-note note-bottom-left">
-
-            <span class="note-arrow" aria-hidden="true">
-              ↗
-            </span>
-
-            follows me<br>
-            EVERYWHERE
-
-          </p>
-
-
-          <!-- Bottom right note -->
-          <p class="pet-note note-bottom-right">
-
-            <span class="note-arrow" aria-hidden="true">
-              ↖
-            </span>
-
-            his little chair<br>
-            is non-negotiable
-
-          </p>
-
-        </div>
-
-        <!-- Bruno introduction -->
-        <div class="pet-intro">
-
-          <p>
-            Bruno was found together with Nino, but he's still only five
-            months old. He somehow has enough energy for the whole house
-            and is definitely the clingiest one. If I move, there's a good
-            chance he's coming with me. He's also the least picky eater and
-            will happily try almost anything. His favorite place, though, is
-            still his little chair. We used to feed him milk there when he
-            was tiny, and he's been attached to it ever since.
-          </p>
-
-        </div>
-
-        <a class="text-link chapter-next" href="#biscuit">
-          Next up: Biscuit
-          <span aria-hidden="true">&rarr;</span>
-        </a>
-
-      </div>
-
-    </section>
-
-
-    <!--
-      BISCUIT
-    -->
-<section id="biscuit" class="pet-chapter biscuit-card">
-
-  <div class="page-width chapter-inner">
-
-    <h2>
-      Biscuit<span class="name-dot">.</span>
-    </h2>
-
-    <div class="pet-notebook">
-
-      <!-- Top left note -->
-      <p class="pet-note note-top-left">
-        1 year old
-
-        <span class="note-arrow" aria-hidden="true">
-          ↘
-        </span>
-      </p>
-
-
-      <!-- Top right note -->
-      <p class="pet-note note-top-right">
-        loves everyone<br>
-        he knows
-
-        <span class="note-arrow" aria-hidden="true">
-          ↙
-        </span>
-      </p>
-
-
-      <!-- Biscuit photo -->
-      <figure class="pet-photo">
-
-        <img
-          src="images/Biscuit.jpg"
-          alt="Biscuit, a rescue dog">
-
-        <figcaption>
-          Friendly face. Very serious security department.
-        </figcaption>
-
-      </figure>
-
-
-      <!-- Bottom left note -->
-      <p class="pet-note note-bottom-left">
-
-        <span class="note-arrow" aria-hidden="true">
-          ↗
-        </span>
-
-        strangers are<br>
-        immediately suspicious
-
-      </p>
-
-
-      <!-- Bottom right note -->
-      <p class="pet-note note-bottom-right">
-
-        <span class="note-arrow" aria-hidden="true">
-          ↖
-        </span>
-
-        fruit<br>
-        OUT
-
-      </p>
-
-    </div>
-
-
-    <!-- Biscuit introduction -->
-    <div class="pet-intro">
-
-      <p>
-        Biscuit is a one-year-old rescue dog with basically unlimited
-        energy. He loves everyone he knows and gets ridiculously excited
-        whenever he sees a familiar face. Strangers get a very different
-        welcome, though, Biscuit takes his job as the house security
-        system extremely seriously. He also has a strangely personal
-        problem with watermelon. Sometimes just hearing the word is
-        enough to get a reaction.
-      </p>
-
-    </div>
-
-
-    <a class="text-link chapter-next" href="index.html#family">
-      Back to the family
-      <span aria-hidden="true">&rarr;</span>
-    </a>
-
-  </div>
-
-</section>
-
-
   </main>
 
-
-  <!--FOOTER -->
-
   <footer class="page-width">
-
-    <p>
-      Xinyu (Isabel) Zhang
-      <span class="footer-note">
-        / My little family
-      </span>
-    </p>
-
-    <a href="index.html">
-      Back home
-    </a>
-
-    <a href="#top">
-      Back to top
-      <span aria-hidden="true">
-        &uarr;
-      </span>
-    </a>
-
+    <p>Xinyu (Isabel) Zhang <span class="footer-note">/ My little family</span></p>
+    <a href="index.html">Back home</a>
+    <a href="#top">Back to top <span aria-hidden="true">&uarr;</span></a>
   </footer>
-
-
 </body>
-
 </html>
