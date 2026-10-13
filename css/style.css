@@ -1,52 +1,53 @@
-/* =========================
-   BASIC PAGE STYLING
-   ========================= */
+/*BASIC PAGE STYLING */
 
 body {
   margin: 0;
+
   color: black;
-  background-color: rgb(244, 228, 231);
+  background-color: mistyrose;
 
   font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
   line-height: 1.6;
 }
 
+
 /* Keeps the content centered and prevents it from becoming too wide */
+
 .page-width {
   width: 86%;
   max-width: 1100px;
+
   margin: 0 auto;
 }
 
 
-/* =========================
-   LINKS
-   ========================= */
+/* LINKS */
 
 a {
-  color: #24574b;
+  color: darkslategray;
 }
 
 a:hover {
-  color: #a13343;
+  color: brown;
 }
 
 a:focus {
-  outline: 2px solid #a13343;
+  outline: 2px solid brown;
   outline-offset: 4px;
 }
 
 
-/* =========================
-   ACCESSIBILITY: SKIP LINK
-   ========================= */
+/*ACCESSIBILITY: SKIP LINK*/
 
 .skip-link {
   position: absolute;
+
   left: 1em;
   top: -5em;
+
   padding: 0.5em;
-  background-color: #ffffff;
+
+  background-color: white;
 }
 
 .skip-link:focus {
@@ -54,12 +55,11 @@ a:focus {
 }
 
 
-/* =========================
-   HEADER / NAVIGATION
-   ========================= */
+/* 
+HEADER / NAVIGATION*/
 
 .site-header {
-  border-bottom: 1px solid #dce2db;
+  border-bottom: 1px solid gainsboro;
 }
 
 nav {
@@ -69,46 +69,40 @@ nav {
 
 .site-name {
   display: inline-block;
+
   width: 59%;
+
   font-weight: bold;
   text-decoration: none;
-  color: #242c2b;
-}
 
-.monogram {
-  display: inline-block;
-  margin-right: 0.65em;
-  padding: 0.05em 0.3em;
-
-  color: #ffffff;
-  background-color: white;
-
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.35em;
+  color: black;
 }
 
 nav ul {
   display: inline-block;
+
   width: 39%;
+
   margin: 0;
   padding: 0;
+
   text-align: right;
 }
 
 nav li {
   display: inline-block;
+
   margin-left: 1.5em;
 }
 
 nav a {
   text-decoration: none;
-  color: #242c2b;
+
+  color: black;
 }
 
 
-/* =========================
-   TYPOGRAPHY
-   ========================= */
+/* TYPOGRAPHY */
 
 h1,
 h2,
@@ -121,41 +115,49 @@ h1,
 h2,
 h3 {
   font-family: Georgia, "Times New Roman", serif;
+
   font-weight: normal;
   line-height: 1.1;
 }
 
 h1 {
   font-size: 4.5em;
+
   margin-bottom: 0.1em;
 }
 
 h2 {
   font-size: 2.6em;
+
   margin-bottom: 0.55em;
 }
 
 h3 {
   font-size: 1.65em;
+
   margin-bottom: 0.4em;
 }
 
 .name-dot {
-  color: #a13343;
+  color: brown;
 }
 
 .section-label {
+  margin-bottom: 1.4em;
+
   font-family: "Courier New", Courier, monospace;
   font-size: 0.8em;
-  color: #24574b;
-  margin-bottom: 1.4em;
+
+  color: darkslategray;
 }
 
 .handwritten {
+  margin-bottom: 1em;
+
   font-family: "Segoe Print", "Comic Sans MS", cursive;
   font-size: 1.3em;
-  color: #a13343;
-  margin-bottom: 1em;
+
+  color: brown;
 }
 
 .small-note {
@@ -172,14 +174,16 @@ h3 {
 
 .second-link {
   display: inline-block;
+
   margin-left: 1.5em;
 }
-/* =========================
-   INTRO / HERO SECTION
-   ========================= */
+
+
+/* INTRO  */
 
 .intro-band {
-  background-color: rgb(255, 247, 247);
+  background-color: snow;
+
   border-bottom: 1px solid beige;
 }
 
@@ -190,37 +194,39 @@ h3 {
 
 .intro-text {
   display: inline-block;
+
   vertical-align: middle;
 
   width: 53%;
+
   margin-right: 7%;
 }
 
 .intro-copy {
   max-width: 29em;
+
   margin-bottom: 1.5em;
 }
 
 
-/* =========================
-   PERSONAL PHOTO
-   ========================= */
+/* PERSONAL PHOTO */
 
 .portrait-print {
   display: inline-block;
+
   vertical-align: middle;
 
   position: relative;
 
   width: 35%;
-  margin: 0;
 
+  margin: 0;
   padding: 12px;
 
-  border: 1px solid #b6c2b8;
-  border-bottom: 5px solid #b6c2b8;
+  background-color: white;
 
-  background-color: #ffffff;
+  border: 1px solid silver;
+  border-bottom: 5px solid silver;
 }
 
 .portrait-print img {
@@ -228,6 +234,7 @@ h3 {
 
   width: 100%;
   max-width: 100%;
+
   height: auto;
 }
 
@@ -248,19 +255,20 @@ figcaption {
 
   padding: 0.2em 0.7em;
 
-  background-color: #f0bfd0;
-  color: #61313f;
+  background-color: lightpink;
+  color: maroon;
 
   font-family: "Courier New", Courier, monospace;
   font-size: 0.8em;
 }
+
 
 /* =========================
    ABOUT ME SECTION
    ========================= */
 
 .about-band {
-  border-bottom: 1px solid #ddd5cc;
+  border-bottom: 1px solid lightgray;
 }
 
 .about-content {
@@ -278,6 +286,7 @@ figcaption {
 
 .about-column {
   display: inline-block;
+
   vertical-align: top;
 
   width: 44%;
@@ -292,27 +301,31 @@ figcaption {
 
   font-size: 1.05em;
   line-height: 1.8;
-  letter-spacing:0.01em;
+
+  letter-spacing: 0.01em;
 }
 
 .about-column a {
-  color: lightskyblue;
+  color: darkslategray;
+
   font-weight: bold;
 }
 
 .about-column a:hover {
-  color: lightsalmon;
+  color: brown;
 }
 
-/*MY PETS SECTION*/
+
+/* MY PETS SECTION*/
 
 .pet-band {
-  background-color:  #f0bfd0;
+  background-color: lightpink;
 }
 
 .family-caption {
-  color: #526661;
   margin-bottom: 2em;
+
+  color: dimgray;
 }
 
 .family-gallery {
@@ -322,31 +335,39 @@ figcaption {
 
 .family-card {
   display: inline-block;
+
   vertical-align: top;
 
   width: 46%;
+
   margin-right: 3%;
   margin-bottom: 2em;
 
-  color: #242c2b;
-  background-color: #fffdf9;
+  color: black;
+  background-color: snow;
 
-  border: 1px solid #c6d5cf;
-  border-bottom: 4px solid #c6d5cf;
+  border: 1px solid silver;
+  border-bottom: 4px solid silver;
 
   text-decoration: none;
 }
 
 .mini-portrait {
   position: relative;
+
   height: 400px;
+
   margin: 10px;
+
   overflow: hidden;
 }
+
 .mini-portrait img {
   display: block;
+
   width: 100%;
   height: 100%;
+
   object-fit: cover;
 }
 
@@ -358,12 +379,11 @@ figcaption {
 
   padding: 0.25em 0.5em;
 
-  background-color: #f0bfd0;
+  background-color: pink;
+  color: black;
 
   font-family: "Courier New", Courier, monospace;
   font-size: 0.7em;
-
-  color: #242c2b;
 }
 
 .family-card h3 {
@@ -380,22 +400,21 @@ figcaption {
 
   font-size: 0.9em;
 
-  color: #526661;
+  color: dimgray;
 }
 
 .family-card:hover {
-  border-color: #a13343;
+  border-color: brown;
 }
 
-/* =========================
-   PET CHAPTERS
-   ========================= */
+
+/* PET CHAPTERS */
 
 .pet-chapter {
   padding-top: 4em;
   padding-bottom: 4em;
 
-  border-bottom: 1px solid #ddd5cc;
+  border-bottom: 1px solid lightgray;
 }
 
 .chapter-inner h2 {
@@ -403,50 +422,54 @@ figcaption {
 }
 
 
-/* =========================
-   PET NOTEBOOK
-   ========================= */
+/* PET ALBUM HEADING */
+.album-heading {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+}
+
+
+/* PET NOTEBOOK */
 
 .pet-notebook {
   position: relative;
 
-  min-height: 560px;
+  min-height: 650px;
 
-  margin-top: 1.5em;
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 
 
-/* Main pet photo */
+/*MAIN PET PHOTO*/
 
 .pet-photo {
   position: absolute;
 
-  width: 48%;
-  left: 26%;
-  top: 65px;
+  width: 58%;
+
+  left: 21%;
+  top: 55px;
 
   margin: 0;
   padding: 10px;
 
   box-sizing: border-box;
 
-  background-color: #fffdf9;
+  background-color: snow;
 
-  border: 1px solid #d8d8d2;
-  border-bottom: 4px solid #b9c1bb;
+  border: 1px solid lightgray;
+  border-bottom: 4px solid silver;
 }
-
 
 .pet-photo img {
   display: block;
 
   width: 100%;
-  height: 330px;
+  height: 500px;
 
   object-fit: cover;
 }
-
 
 .pet-photo figcaption {
   padding-top: 0.8em;
@@ -456,18 +479,16 @@ figcaption {
 
   text-align: center;
 
-  color: #242c2b;
+  color: black;
 }
 
 
-/* =========================
-   HANDWRITTEN NOTES
-   ========================= */
+/* HANDWRITTEN NOTES */
 
 .pet-note {
   position: absolute;
 
-  width: 21%;
+  width: 18%;
 
   margin: 0;
 
@@ -476,52 +497,50 @@ figcaption {
   font-size: 1.05em;
   line-height: 1.45;
 
-  color: #24574b;
+  color: darkslategray;
 }
 
 
-/* Top left */
+/* Top left note */
 
 .note-top-left {
   left: 2%;
-  top: 65px;
+  top: 90px;
 }
 
 
-/* Top right */
+/* Top right note */
 
 .note-top-right {
-  right: 1%;
-  top: 90px;
+  right: 0.5%;
+  top: 100px;
 
-  color: #a13343;
+  color: brown;
 }
 
 
-/* Bottom left */
+/* Bottom left note */
 
 .note-bottom-left {
-  left: 4%;
-  top: 385px;
+  left: 3%;
+  top: 465px;
 
-  color: #a13343;
+  color: brown;
 }
 
 
-/* Bottom right */
+/* Bottom right note */
 
 .note-bottom-right {
   right: 1%;
-  top: 400px;
+  top: 475px;
 }
 
 
-/* Arrow */
+/*  NOTE ARROWS */
 
 .note-arrow {
   display: block;
-
-  margin-top: 0.25em;
 
   font-family: Georgia, "Times New Roman", serif;
 
@@ -530,17 +549,56 @@ figcaption {
 }
 
 
+/* Arrow from top left toward photo */
+
+.note-top-left .note-arrow {
+  margin-top: 0.3em;
+  padding-right: 0.1em;
+
+  text-align: right;
+}
+
+
+/* Arrow from top right toward photo */
+
+.note-top-right .note-arrow {
+  margin-top: 0.3em;
+  padding-left: 0.1em;
+
+  text-align: left;
+}
+
+
+/* Arrow from bottom left toward photo */
+
+.note-bottom-left .note-arrow {
+  margin-bottom: 0.3em;
+  padding-right: 0.1em;
+
+  text-align: right;
+}
+
+
+/* Arrow from bottom right toward photo */
+
+.note-bottom-right .note-arrow {
+  margin-bottom: 0.3em;
+  padding-left: 0.1em;
+
+  text-align: left;
+}
+
+
 /* =========================
    PET INTRODUCTION
    ========================= */
 
 .pet-intro {
-  width: 70%;
-  max-width: 760px;
+  width: 76%;
+  max-width: 820px;
 
   margin: 0 auto 2.5em;
 }
-
 
 .pet-intro p {
   margin: 0;
@@ -550,14 +608,114 @@ figcaption {
 }
 
 
-/* =========================
-   NEXT PET LINK
-   ========================= */
+/* NEXT PET LINK */
 
 .chapter-next {
   display: block;
 
-  text-align: right;
-
   margin-top: 1.5em;
+
+  text-align: right;
+}
+
+
+/* Smaller screens: stack columns and let images keep their natural proportions. */
+@media screen and (max-width: 900px) {
+  .site-name,
+  nav ul {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  nav ul {
+    margin-top: 0.8em;
+  }
+
+  nav li {
+    margin-left: 0;
+    margin-right: 1.5em;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.2em;
+  }
+
+  .intro-text,
+  .about-column {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .about-column:first-child {
+    margin-right: 0;
+  }
+
+  .portrait-print {
+    display: block;
+    width: 100%;
+    max-width: 380px;
+    margin: 2em auto 0;
+    box-sizing: border-box;
+  }
+
+  .second-link {
+    display: block;
+    margin-top: 0.8em;
+    margin-left: 0;
+  }
+
+  .family-card {
+    display: block;
+    width: auto;
+    margin-right: 0;
+  }
+
+  .mini-portrait {
+    height: auto;
+  }
+
+  .mini-portrait img,
+  .pet-photo img {
+    height: auto;
+  }
+
+  /* Notes flow in pairs above and below the photo, so longer text can wrap. */
+  .pet-notebook {
+    min-height: 0;
+  }
+
+  .pet-note {
+    position: static;
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+    margin-bottom: 1.2em;
+    font-size: 1em;
+  }
+
+  .note-top-left,
+  .note-bottom-left {
+    margin-right: 4%;
+  }
+
+  .pet-photo {
+    position: static;
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto 1.5em;
+  }
+
+  .pet-intro {
+    width: 100%;
+  }
+
+  .chapter-next {
+    text-align: left;
+  }
 }
